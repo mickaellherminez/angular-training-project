@@ -4,7 +4,7 @@ import { CHARACTERS } from './mock-characters'
   
 @Component({
   selector: 'bigbang-app',
-  template: `<h1>Characters</h1>`,
+  templateUrl: `./app/app.component.html`,
 })
 export class AppComponent implements OnInit { 
   
