@@ -19,8 +19,7 @@
 ---
 ## IDE
 - [Visual Studio](https://code.visualstudio.com/)
-
--- [Emmet](https://docs.emmet.io/cheat-sheet/) 
+([Emmet](https://docs.emmet.io/cheat-sheet/)) 
 - [Sublime Text](https://www.sublimetext.com/)
 - [Atom](https://atom.io/)
 - [Webstorm](https://www.jetbrains.com/fr-fr/webstorm/)
