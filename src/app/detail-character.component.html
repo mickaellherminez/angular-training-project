@@ -1,0 +1,40 @@
+<div *ngIf="character" class="row">
+    <div class="col s12 m8 offset-m2">
+    <h2 class="header center">{{ character.name }}</h2>
+    <div class="card horizontal hoverable">
+      <div class="card-image">
+        <img [src]="character.picture">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <table class="bordered striped">
+            <tbody>
+              <tr>
+                <td>Name:</td>
+                <td><strong class="{{ character.name | characterTypeColor }}">{{ character.name }}</strong></td>
+              </tr>
+              <tr>
+                <td>Number of seasons:</td>
+                <td><strong>{{ character.nbrSeason }}</strong></td>
+              </tr>
+              <tr>
+                <td>In season:</td>
+                <td>                                                    
+                  <span *ngFor="let season of character.seasons; let isLast = last;">{{ season }}{{ !isLast ? ',' : '.'}}</span> 
+                </td>
+              </tr>
+              <tr>
+                <td>Date de création</td>
+                <td><em>{{ character.updatedAt | date:"dd/MM/yyyy" }}</em></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card-action">
+          <a (click)="goBack()">Retour</a>
+        </div>
+      </div>
+    </div>
+    </div>
+</div>
+<h4 *ngIf='!character' class="center">Aucun character à afficher !</h4>

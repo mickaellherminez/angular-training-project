@@ -3,5 +3,6 @@ export class Character {
   nbrSeason: number;
   name: string;
   picture: string;
-  season: Array<number>;
+  seasons: Array<number>;
+  updatedAt: Date;
 }

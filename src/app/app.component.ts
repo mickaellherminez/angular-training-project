@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Character } from './character';
 import { CHARACTERS } from './mock-characters'
   
@@ -6,15 +6,4 @@ import { CHARACTERS } from './mock-characters'
   selector: 'bigbang-app',
   templateUrl: `./app/app.component.html`,
 })
-export class AppComponent implements OnInit { 
-  
-  characters: Character[] = null;
-
-  ngOnInit() {
-    this.characters = CHARACTERS;
-  }
-
-  selectCharacter(character: Character) {
-    console.log('Vous avez selectionné ' + character.name);
-  }
-}
+export class AppComponent {}

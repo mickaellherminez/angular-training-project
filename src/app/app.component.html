@@ -1,8 +1,9 @@
-<h1>Characters: </h1>
+<nav>
+    <div class="nav-wrapper deep-purple lighten-5">
+        <strong><a href="#" class="brand-logo center">
+            <span style="color: black;">The Big<span style="color: red"> BANG</span>  THEORY</span></a>
+        </strong>
+    </div>
+</nav>
 
-<ul *ngFor="let character of characters">
-    <li *ngIf="character.picture !== 'assets/'" >
-        <img [src]="character.picture" height="300px"> 
-        <h3>{{character.name}}</h3>
-    </li>
-</ul>
+<router-outlet></router-outlet>
